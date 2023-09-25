@@ -116,16 +116,16 @@ function scrollActive(){
     const scrollY= window.pageXOffset;
 
     sections.forEach((current) =>{
-        const sectionHeigth = current.offsetHeigth;
-        const sectionTop = current.affsetTop - 50;
-        sectionID = current.gerAttribute("id");
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectioId = current.gerAttribute("id");
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeigth){
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document
-            .querySelector(".nav__menu a [href*=" + sectionId+ "]")
+            .querySelector(".nav__menu a [href*=" + sectinId+ "]")
             .classList.add("active-link");
         }else {
-            document.querySelector(".nav__menu a [href*=" + sectionId +"]")
+            document.querySelector(".nav__menu a [href*=" + sectioId +"]")
             .classList.remove("active-link");
         }
     });
@@ -148,6 +148,7 @@ function scrollUp(){
 }
 window.addEventListener("scroll",scrollUp);
 
+/*==dark theme==*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";

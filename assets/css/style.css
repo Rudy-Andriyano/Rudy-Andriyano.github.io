@@ -82,14 +82,9 @@ body.dark-theme {
     cursor: pointer;
 
 }
-.swiper {
-    width: 650px;
-    height: 300px;
-  }
-  .swiper-button-next,.swiper-button-prev{
-    display: none;
-  }
-  
+
+ 
+ 
 .change-theme:hover {
     color: var(--first-color);
 }
@@ -633,11 +628,13 @@ img {
 }
 
 .qualification__title {
+    align-items: center;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
 
 .qualification__subtitle {
+    align-items: center;
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
@@ -1137,7 +1134,7 @@ img {
 
     .nav__icon,
     .nav__close,
-    .nav__toogle {
+    .nav__toggle {
         display: none;
     }
 
