@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /* ===============VARIABLE CSS================ */
 :root {
-    --header-height: 3rem;
+    --header-height: 5rem;
     /* ======COLOR====== */
     /* change favorite color */
     --hue-color: 142; /* Purpel 250 - Green 142 - Blue 230 - Pink 340*/
@@ -255,12 +255,31 @@ img {
     color: lightgreen;
     font-size: var(--big-font-size);
 }
+
 .nav{
     max-width: 968px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.nav__logo,
+.nav__toggle{
+color: var(--title-color);
+font-weight: var(--font-medium);
+}
+
+.nav__logo:hover{
+    color: var(--first-color);
+}
+
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover{
+    color: var(--first-color);
 }
 
 .nav__list {
@@ -449,6 +468,7 @@ img {
     align-items: center;
 }
 
+
 .about__description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
@@ -482,7 +502,7 @@ img {
 }
 /* ================SKILLS=============== */
 .skills__container {
-    row-gap: 0;
+    row-gap: in1;
 }
 
 .skills__header {
@@ -631,14 +651,12 @@ img {
     column-gap: 1.5rem;
 }
 
-.qualification__title {
-    align-items: center;
+.qualification__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
 
-.qualification__subtitle {
-    align-items: center;
+.qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
@@ -687,7 +705,7 @@ img {
     background-color: var(--container-color);
     padding: 3.5rem 0.5rem 1.25rem 1.5rem;
     border-radius: 0.25rem;
-    box-shadow: 1 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
 }
 
@@ -803,25 +821,24 @@ img {
     transform: translateX(0.25rem);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    content: "";
+.swiper-button-next::after, .swiper-button-prev::after {
+    content:"";
 }
 
-.swiper-portfolio-icon {
+.swiper-portofolio-icon {
     font-size: 2rem;
     color: var(--first-color);
 }
 
-.swiper-button-prev {
+.swiper-button-prev{
     left: -0.5rem;
 }
 
-.swiper-button-next {
+.swiper-button-next{
     right: -0.5rem;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-container-horizontal  > .swiper-pagination-bullets {
     bottom: -2.5rem;
 }
 
@@ -1051,7 +1068,7 @@ img {
     }
 
     .project__img {
-        width: 200px;
+        width: 150px;
     }
 
     .testimonial__data,
@@ -1093,6 +1110,7 @@ img {
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+        align-content: center;
     }
 
     .qualification__sections {
