@@ -829,7 +829,7 @@ font-weight: var(--font-medium);
     content:"";
 }
 
-.swiper-portofolio-icon {
+.swiper-portfolio-icon {
     font-size: 2rem;
     color: var(--first-color);
 }
@@ -839,7 +839,7 @@ font-weight: var(--font-medium);
 }
 
 .swiper-button-next{
-    right: -0.5rem;
+    right: -0.5-rem;
 }
 
 .swiper-container-horizontal  > .swiper-pagination-bullets {
@@ -854,6 +854,7 @@ font-weight: var(--font-medium);
 .swiper-button-next,
 .swiper-pagination-bullet {
     outline: none;
+    
 }
 /* ================PROJECT IN MIND================= */
 .project {
