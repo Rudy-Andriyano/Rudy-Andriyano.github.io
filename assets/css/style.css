@@ -650,6 +650,7 @@ font-weight: var(--font-medium);
 }
 
 .qualification__data {
+   align-content: flex-end;
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
@@ -661,7 +662,7 @@ font-weight: var(--font-medium);
 }
 
 .qualification__subtitle{
-    display: inline-block;
+    display: inline;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
 }
