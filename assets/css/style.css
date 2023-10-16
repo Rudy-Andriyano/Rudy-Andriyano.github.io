@@ -608,11 +608,11 @@ font-weight: var(--font-medium);
 }
 
 .skills__sketch {
-    width: 85%;
+    width: 40%;
 }
 
 .skills__photoshop {
-    width: 85%;
+    width: 25%;
 }
 
 .skills__close .skills__list {
